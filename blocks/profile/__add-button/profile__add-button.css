@@ -9,7 +9,7 @@
   background-position: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .profile__add-button {
     width: 282px;
     margin: 0 auto;

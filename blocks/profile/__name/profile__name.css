@@ -8,7 +8,7 @@ color: #fff;
 margin: 0 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
   .profile__name {
     font-size: 27px;
     line-height: 33px;
