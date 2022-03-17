@@ -1,0 +1,25 @@
+.profile {
+  max-width: 880px;
+  min-height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+@media (max-width: 980px) {
+  .profile {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+/* TODO на 520px */
+
+@media (max-width: 320px) {
+  .profile {
+    min-width: 282px;
+    flex-direction: column;
+  }
+}
