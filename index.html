@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="shortcut icon" href="./images/__logo.ico" type="image/x-icon">
+</head>
+  <body>
+    <div class="page">
+      <!-- Шапка сайта -->
+      <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="логотип">
+      </header>
+      <main class="main">
+        <!-- TODO добавить модалку где-то тут -->
+        <div class="profile">
+          <div class="profile__wrapper">
+            <img class="profile__avatar" src="./images/profile_avatar.png" alt="Аватар">
+            <div class="profile__info">
+              <!-- TODO класс не по бэм? -->
+              <div class="profile__info-wrapper">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button class="button profile__edit-button"></button>
+              </div>
+              <p class="profile__description">Исследователь океана</p>
+          </div>
+        </div>
+
+        <!-- Модалка -->
+        <div class="popup">
+          <div class="popup__window">
+            <button class="popup__close-button"></button>
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <div class="input">
+              <input class="popup__name" placeholder="Жак-Ив Кусто" type="text">
+              <input class="popup__description" placeholder="Исследователь океана" type="text">
+              <button class="popup__save-button">Сохранить</button>
+            </div>
+          </div>
+        </div>
+
+
+
+          <button class="button profile__add-button"></button>
+        </div>
+        <div class="elements">
+
+          <div class="element">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка места">
+            <div class="element__wrapper">
+            <h3 class="element__title">Домбай</h3>
+            <button class="button element__like"></button>
+            </div>
+            <!-- TODO активный лайк сделать нужно где-то в слаке почитать-->
+            <!-- <button class="element__like-active"></button> -->
+          </div>
+
+          <!-- TODO поменять картинку и название в карточке -->
+          <div class="element">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка места">
+            <div class="element__wrapper">
+            <h3 class="element__title">Домбай</h3>
+            <button class="button element__like"></button>
+            </div>
+          </div>
+
+           <!-- TODO поменять картинку и название в карточке -->
+           <div class="element">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка места">
+            <div class="element__wrapper">
+            <h3 class="element__title">Домбай</h3>
+            <button class="button element__like"></button>
+            </div>
+          </div>
+
+
+          <!-- TODO поменять картинку и название в карточке -->
+          <div class="element">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка места">
+            <div class="element__wrapper">
+            <h3 class="element__title">Домбай</h3>
+            <button class="button element__like"></button>
+            </div>
+          </div>
+
+
+          <!-- TODO поменять картинку и название в карточке -->
+          <div class="element">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка места">
+            <div class="element__wrapper">
+            <h3 class="element__title">Домбай</h3>
+            <button class="button element__like"></button>
+            </div>
+          </div>
+
+
+          <!-- TODO поменять картинку и название в карточке -->
+          <div class="element">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка места">
+            <div class="element__wrapper">
+            <h3 class="element__title">Домбай</h3>
+            <button class="button element__like"></button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Подвал сайта -->
+      <!-- TODO Вообще не сделан еще  -->
+      <footer class="footer">
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
+      </footer>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
