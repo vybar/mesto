@@ -15,10 +15,10 @@
   }
 }
 
-/* TODO на 520px */
 @media (max-width: 540px) {
   .profile {
     min-width: 282px;
     flex-direction: column;
+    padding-top: 38.25px;
   }
 }

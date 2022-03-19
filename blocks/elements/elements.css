@@ -12,5 +12,6 @@
   .elements {
     width: 90%;
     justify-content: center;
+    padding-top: 33px;
   }
 }

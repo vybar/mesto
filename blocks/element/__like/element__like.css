@@ -2,8 +2,12 @@
   width: 22px;
   height: 19px;
   background-image: url(../../../images/button_like.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #fff;
   border: none;
+}
+
+.element__like:active {
+  background-image: url(../../../images/button_like_active.svg);
+  width: 22px;
+  height: 19px;
 }
