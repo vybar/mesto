@@ -13,11 +13,14 @@ function closePopup() {
 openedButton.addEventListener('click', openPopup);
 closeButton.addEventListener('click', closePopup);
 
-let formElement = popupElement.querySelector('.popup__save-button');
-let nameInput = popupElement.querySelector('.popup__input_type_name');
-let nameValue = document.querySelector('profile__name');
-let jobInput = popupElement.querySelector('.popup__input_type_job');
-let jobValue = document.querySelector('profile__job');
+
+// Далее нужно отпарвить содержание
+
+// Находим форму в DOM
+let formElement = popupElement.querySelector('.popup__save-button');// Воспользуйтесь методом querySelector()
+// Находим поля формы в DOM
+let nameInput = popupElement.querySelector('.popup__input_type_name');// Воспользуйтесь инструментом .querySelector()
+let jobInput = popupElement.querySelector('.popup__input_type_description');// Воспользуйтесь инструментом .querySelector()
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
@@ -25,9 +28,7 @@ function formSubmitHandler (evt) {
     evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
                                                 // Так мы можем определить свою логику отправки.
                                                 // О том, как это делать, расскажем позже.
-    nameValue.textContent = nameInput.value;
-    jobValue.textContent = jobInput.value;
-    closePopup();
+
     // Получите значение полей jobInput и nameInput из свойства value
 // document.getElementsByClassName("jobInput").value;
     // Выберите элементы, куда должны быть вставлены значения полей
