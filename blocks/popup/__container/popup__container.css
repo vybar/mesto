@@ -4,6 +4,8 @@
   width: 430px;
   height: 330px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 767px) {
