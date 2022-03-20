@@ -1,19 +1,5 @@
 .popup__input_type_job {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
-  margin-top: 30px;
-  width: 358px;
-  height: 27px;
-}
-
-@media (max-width: 767px) {
-  .popup__input_type_job {
-    width: 238px;
-  }
+  /* TODO del */
+  /* margin-top: 30px; */
+  margin: 30px auto 0;
 }

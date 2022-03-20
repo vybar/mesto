@@ -1,18 +1,6 @@
 .popup__input_type_name {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
-  margin-top: 54px;
-  width: 358px;
+  /* TODO del */
+  /* margin-top: 54px; */
+  margin: 54px auto 0;
 }
 
-@media (max-width: 767px) {
-  .popup__input_type_name {
-    width: 238px;
-  }
-}
