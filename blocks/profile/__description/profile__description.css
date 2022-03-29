@@ -1,5 +1,6 @@
 .profile__job {
 font-family: 'Inter';
+/* TODO по всему файлу задать безопастный шрифт */
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -13,6 +14,7 @@ margin: 16px 0 0;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+    /* TODO Нужно убрать все дубли правил в медиа-выражениях. Они должны содержать только изменяющиеся стили. */
     color: #fff;
     margin-top: 7px;
   }

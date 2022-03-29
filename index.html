@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
-  <link rel="shortcut icon" href="./images/__logo.ico" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="./images/__logo.ico" type="image/x-icon" />
+  </head>
   <body>
     <div class="page">
       <!-- Шапка сайта -->
       <header class="header">
-        <img class="header__logo" src="./images/logo.svg" alt="логотип">
+        <img class="header__logo" src="./images/logo.svg" alt="логотип" />
       </header>
       <main class="main">
-        <div class="profile">
+        <!-- Карточка пользователя -->
+        <section class="profile">
           <div class="profile__wrapper">
-            <img class="profile__avatar" src="./images/profile_avatar.png" alt="Аватар">
+            <img class="profile__avatar" src="./images/profile_avatar.png" alt="Аватар" />
             <div class="profile__info">
               <div class="profile__info-wrapper">
+                <!-- TODO Добавить text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: ;  -->
                 <h1 class="profile__name">Жак-Ив Кусто</h1>
-                <button class="button profile__edit-button"></button>
+                <button class="button profile__edit-button" type="button"></button>
               </div>
               <p class="profile__job">Исследователь океана</p>
             </div>
           </div>
-          <button class="button profile__add-button"></button>
-        </div>
-        <!-- Модалка -->
-        <div class="popup">
-          <div class="popup__container">
-            <button class="button popup__close-button"></button>
-            <h3 class="popup__title">Редактировать профиль</h3>
-            <!-- <div class="popup__input"> -->
-              <input class="popup__input popup__input_type_name" type="text" value="Жак-Ив Кусто">
-              <input class="popup__input popup__input_type_job" type="text" value="Исследователь океана">
-            <!-- </div> -->
-            <button class="button popup__save-button">Сохранить</button>
-          </div>
-        </div>
+          <button class="button profile__add-button" type="button"></button>
+        </section>
         <!-- Блок с местами-->
-        <div class="elements">
+        <section class="elements">
+          <!-- TODO Карточка места выделена в отдельный БЭМ-блок -->
           <div class="element">
-            <img class="element__image" src="./images/element_karachaevsk.png" alt="Картинка Карачаево-Черкессия">
+            <img class="element__image" src="./images/element_karachaevsk.png" alt="Картинка Карачаево-Черкессия" />
             <div class="element__wrapper">
-            <h3 class="element__title">Карачаево</h3>
-            <button class="button element__like"></button>
-            </div>
-          </div>
-          <div class="element">
-            <img class="element__image" src="./images/element_elbrus.png" alt="Картинка Гора Эльбрус">
-            <div class="element__wrapper">
-            <h3 class="element__title">Гора Эльбрус</h3>
-            <button class="button element__like"></button>
-            </div>
-          </div>
-           <div class="element">
-            <img class="element__image" src="./images/element_dombai.png" alt="Картинка Домбай">
-            <div class="element__wrapper">
-            <h3 class="element__title">Домбай</h3>
-            <button class="button element__like"></button>
+              <h2 class="element__title">Карачаево</h2>
+              <!-- TODO element__like прозрачность 0.5 и убрать микс -->
+              <button class="button element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
-            <img class="element__image" src="./images/darya-shishkina-rRV9wzYQWxQ-unsplash.jpg" alt="Картинка Гора Эльбрус">
+            <img class="element__image" src="./images/element_elbrus.png" alt="Картинка Гора Эльбрус" />
             <div class="element__wrapper">
-            <h3 class="element__title">Гора Эльбрус</h3>
-            <button class="button element__like"></button>
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <button class="button element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
-            <img class="element__image" src="./images/sanjay-hona-3HOanZsVV0U-unsplash.jpg" alt="Картинка Домбай">
+            <img class="element__image" src="./images/element_dombai.png" alt="Картинка Домбай" />
             <div class="element__wrapper">
-            <h3 class="element__title">Домбай</h3>
-            <button class="button element__like"></button>
+              <h2 class="element__title">Домбай</h2>
+              <button class="button element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
-            <img class="element__image" src="./images/simon-berger-RBpUVzCP3ws-unsplash.jpg" alt="Картинка Карачаево-Черкессия">
+            <img class="element__image" src="./images/darya-shishkina-rRV9wzYQWxQ-unsplash.jpg" alt="Картинка Гора Эльбрус" />
             <div class="element__wrapper">
-            <h3 class="element__title">Карачаево-Черкессия</h3>
-            <button class="button element__like"></button>
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <button class="button element__like" type="button"></button>
             </div>
           </div>
-        </div>
+          <div class="element">
+            <img class="element__image" src="./images/sanjay-hona-3HOanZsVV0U-unsplash.jpg" alt="Картинка Домбай" />
+            <div class="element__wrapper">
+              <h2 class="element__title">Домбай</h2>
+              <button class="button element__like" type="button"></button>
+            </div>
+          </div>
+          <div class="element">
+            <img class="element__image" src="./images/simon-berger-RBpUVzCP3ws-unsplash.jpg" alt="Картинка Карачаево-Черкессия" />
+            <div class="element__wrapper">
+              <h2 class="element__title">Карачаево-Черкессия</h2>
+              <button class="button element__like" type="button"></button>
+            </div>
+          </div>
+        </section>
       </main>
       <!-- Подвал сайта -->
       <footer class="footer">
         <p class="footer__copyright">© 2020 Mesto Russia</p>
       </footer>
+      <!-- Модалка -->
+      <div class="popup">
+        <div class="popup__container">
+          <button class="button popup__close-button" type="button"></button>
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <!-- <div class="popup__input"> -->
+          <!-- TODO посмотреть что делать с name -->
+          <!-- TODO Добавить везде placeholder и required-->
+          <input class="popup__input popup__input_type_name" type="text" value="Жак-Ив Кусто" name="Имя" />
+          <input class="popup__input popup__input_type_job" type="text" value="Исследователь океана" />
+          <!-- </div> -->
+          <!-- TODO прозрачность сделать 0.8 и перенести в стили -->
+          <button class="button popup__save-button" type="submit">Сохранить</button>
+        </div>
+      </div>
     </div>
     <script src="./script/index.js"></script>
   </body>

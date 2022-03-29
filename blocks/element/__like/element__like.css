@@ -2,12 +2,10 @@
   width: 22px;
   height: 19px;
   background-image: url(../../../images/button_like.svg);
-  background-color: #fff;
+  background-color: transparent;
   border: none;
 }
 
 .element__like:active {
   background-image: url(../../../images/button_like_active.svg);
-  width: 22px;
-  height: 19px;
 }
