@@ -1,4 +1,4 @@
-.element__like {
+.elements__like {
   width: 22px;
   height: 19px;
   background-image: url(../../../images/button_like.svg);
@@ -8,11 +8,11 @@
   transition: opacity .3s ease-in-out;
 }
 
-.element__like:hover {
+.elements__like:hover {
 opacity: 0.5;
 cursor: pointer;
 }
 
-.element__like:active {
+.elements__like:active {
   background-image: url(../../../images/button_like_active.svg);
 }
