@@ -4,6 +4,13 @@
   background-image: url(../../../images/button_like.svg);
   background-color: transparent;
   border: none;
+  text-decoration: none;
+  transition: opacity .3s ease-in-out;
+}
+
+.element__like:hover {
+opacity: 0.5;
+cursor: pointer;
 }
 
 .element__like:active {

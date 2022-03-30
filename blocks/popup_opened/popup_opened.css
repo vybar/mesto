@@ -1,0 +1,4 @@
+/* Открывает по-ап */
+.popup_opened {
+  display: flex;
+}

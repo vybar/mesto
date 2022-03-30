@@ -1,5 +1,4 @@
 .button {
-  cursor: pointer;
   text-decoration: none;
   transition: opacity .3s ease-in-out;
 }
