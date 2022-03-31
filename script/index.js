@@ -3,6 +3,8 @@ let openedButton = document.querySelector('.profile__edit-button');
 let closeButton = popupElement.querySelector('.popup__close-button');
 
 function openPopup() {
+  nameInput.value = nameValue.textContent;
+  jobInput.value = jobValue.textContent;
   popupElement.classList.add('popup_opened');
 }
 
@@ -13,11 +15,19 @@ function closePopup() {
 openedButton.addEventListener('click', openPopup);
 closeButton.addEventListener('click', closePopup);
 
-let formElement = popupElement.querySelector('.popup__save-button');
+const ESC_KEY = 'Escape';
+document.addEventListener('keyup', function(event){
+  console.log(event.key)
+  if (event.key === ESC_KEY) {
+    closePopup();
+  }
+});
+
+let formElement = popupElement.querySelector('.popup__form');
 let nameInput = popupElement.querySelector('.popup__input_type_name');
-let nameValue = document.querySelector('profile__name');
+let nameValue = document.querySelector('.profile__name');
 let jobInput = popupElement.querySelector('.popup__input_type_job');
-let jobValue = document.querySelector('profile__job');
+let jobValue = document.querySelector('.profile__job');
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
