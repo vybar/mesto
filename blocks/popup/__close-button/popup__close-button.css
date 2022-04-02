@@ -31,6 +31,15 @@
 
 @media (max-width: 767px) {
   .popup__close-button {
-    right: 0px;
+    right: -4px;
+  }
+
+  .popup__close-button:before {
+    height: 22px;
+
+  }
+
+  .popup__close-button:after {
+    height: 22px;
   }
 }
