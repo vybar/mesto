@@ -2,7 +2,6 @@
   border-radius: 10px;
   background: #fff;
   width: 430px;
-  min-height: 330px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,5 @@
 @media (max-width: 767px) {
   .popup__container {
     width: 282px;
-    min-height: 322px;
   }
 }
